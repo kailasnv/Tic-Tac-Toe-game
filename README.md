@@ -1,16 +1,12 @@
-# exoh
+# exoh Tic tac toe Game
 
-A new Flutter project.
+## For Running this Application
+clone this Repositary into any directory in your pc, by using
 
-## Getting Started
+       git clone https://github.com/kailasnv/Tic-Tac-Toe-game.git
 
-This project is a starting point for a Flutter application.
+After that, open that project file in VS code - and Run 'flutter pub get' in the terminal to get the dependencies and stuffs.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+If everything is ok, Run 'flutter run' in the termial to start the app.
+  
+        
