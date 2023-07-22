@@ -1,7 +1,7 @@
 # exoh Tic tac toe Game
 
 ## For Running this Application
-clone this Repositary into any directory in your pc, by using
+clone this Repositary into any directory in your pc, by using git 
 
        git clone https://github.com/kailasnv/Tic-Tac-Toe-game.git
 
