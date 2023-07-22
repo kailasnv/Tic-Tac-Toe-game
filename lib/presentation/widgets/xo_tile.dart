@@ -5,10 +5,7 @@ import '../../game_class/game.dart';
 import '../../utils/constants.dart';
 
 class XoTile extends StatelessWidget {
-  const XoTile({
-    super.key,
-    required this.index,
-  });
+  const XoTile({super.key, required this.index});
 
   final int index;
 
@@ -19,9 +16,7 @@ class XoTile extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.all(8),
       child: GestureDetector(
-        onTap: () {
-          game.onTapped(index);
-        },
+        onTap: () => game.onTapped(index),
         child: Stack(
           children: [
             // bottom tile
@@ -39,14 +34,14 @@ class XoTile extends StatelessWidget {
                 ),
               ),
             ),
-            // display X or O
+            // write X or O
             Consumer<GameProvider>(
               builder: (context, state, _) {
                 return Align(
                   alignment: Alignment.center,
                   child: Text(
                     state.displayXO[index],
-                    style: xoStyle,
+                    style: gameStyle.copyWith(fontSize: 25),
                   ),
                 );
               },
