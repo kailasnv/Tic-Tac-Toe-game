@@ -18,6 +18,7 @@ class XoTile extends StatelessWidget {
       child: GestureDetector(
         onTap: () => game.onTapped(index),
         child: Stack(
+          clipBehavior: Clip.none,
           children: [
             // bottom tile
             Padding(

@@ -41,9 +41,10 @@ class GameScreen extends StatelessWidget {
 
           // game pad Grid
           Expanded(
-            flex: 2,
+            flex: 3,
             child: Center(
               child: GridView.builder(
+                physics: const NeverScrollableScrollPhysics(),
                 itemCount: 9,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 3),
@@ -67,7 +68,7 @@ class GameScreen extends StatelessWidget {
                     ),
                     // play again button
                     Padding(
-                      padding: const EdgeInsets.symmetric(vertical: 25),
+                      padding: const EdgeInsets.only(top: 18),
                       child: GestureDetector(
                         onTap: () => game.resetGame(),
                         child: Text(
